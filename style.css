@@ -1,0 +1,490 @@
+/* =================================================================== */
+/* Estilos Globales y Tipografía
+/* =================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 60px 20px 60px 20px;
+    box-sizing: border-box;
+}
+
+/* =================================================================== */
+/* Estilos para la PÁGINA DE INICIO (index.html)
+/* =================================================================== */
+.main-card {
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main-card .logo {
+    max-width: 315px;
+    margin-bottom: 25px;
+}
+
+.main-card h1 {
+    color: #163A73;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Layout del contenedor de botones --- */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* --- Etiqueta de sección (ej: "Firmas de correo") --- */
+.section-label {
+    width: 100%;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #8a9bbf;
+    text-transform: uppercase;
+    margin: 14px 0 4px 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Línea divisora entre secciones --- */
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(22, 58, 115, 0.1);
+    margin: 0 0 4px 0;
+}
+
+/* --- Botón base compartido --- */
+.choice-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 20px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #ffffff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.choice-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-color: #ccc;
+}
+
+/* --- Texto base de botón --- */
+.button-text {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Colores para los botones de firma */
+.text-desktop { color: #0078D4; }
+.text-mobile  { color: #00A4EF; }
+
+.choice-button:hover .text-desktop { color: #0078D4; }
+.choice-button:hover .text-mobile  { color: #00A4EF; }
+
+/* --- Botones de plantillas de correo (email-btn) --- */
+.choice-button.email-btn {
+    justify-content: flex-start;
+    padding-left: 48px;
+    border-color: #d0daf0;
+}
+
+/* Ícono de sobre */
+.choice-button.email-btn::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 14' fill='none'%3E%3Crect x='0.5' y='0.5' width='17' height='13' rx='2' stroke='%230E58A9'/%3E%3Cpath d='M1 1l8 7 8-7' stroke='%230E58A9' stroke-width='1.2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.choice-button.email-btn .button-text {
+    color: #163A73;
+    font-size: 0.8rem;
+}
+
+/* Número de correo (ej: "01") */
+.choice-button.email-btn .email-num {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 11px;
+    font-weight: 700;
+    color: #0E58A9;
+    background: #e6f1fb;
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.choice-button.email-btn:hover {
+    background: #eef3fb;
+    border-color: #0E58A9;
+    box-shadow: 0 4px 16px rgba(14, 88, 169, 0.12);
+}
+
+.choice-button.email-btn:hover .button-text {
+    color: #0E58A9;
+}
+
+/* =================================================================== */
+/* Tabla contenedora del correo (.email-table)
+/* =================================================================== */
+.email-table {
+    width: 650px;
+    max-width: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 24px auto 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+ 
+/* Banner / imagen de cabecera */
+.email-table .banner-img {
+    width: 100%;
+    display: block;
+    border-radius: 24px 24px 0 0;
+}
+ 
+/* Hero de color sólido (cuando no hay imagen) */
+.e-hero {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px 24px 0 0;
+}
+ 
+.e-hero span {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+}
+ 
+/* Cuerpo del correo */
+.e-body {
+    padding: 28px 32px 20px 32px;
+}
+ 
+.e-body h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #163A73;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.e-body h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #163A73;
+    margin: 20px 0 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.e-body p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.7;
+    margin: 0 0 14px 0;
+}
+ 
+/* Botón CTA */
+.e-cta {
+    display: inline-block;
+    background: #0E58A9;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 6px;
+    align-items: center;
+    text-decoration: none;
+    margin: 8px 0 24px 0;
+}
+ 
+.e-cta:hover {
+    background: #0d3a7a;
+}
+ 
+/* Tarjeta inferior */
+.e-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 8px;
+}
+ 
+.e-card-img {
+    width: 110px;
+    min-width: 110px;
+    background: #e8f0fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.e-card-img span {
+    color: #b0c4de;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+}
+ 
+.e-card-img img {
+    width: 110px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+.e-card-body {
+    padding: 14px 16px;
+    flex: 1;
+}
+ 
+.e-card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #163A73;
+    margin: 0 0 5px 0;
+}
+ 
+.e-card-text {
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0 0 8px 0;
+}
+ 
+.e-card-link {
+    font-size: 12px;
+    color: #0E58A9;
+    font-weight: 700;
+    text-decoration: none;
+}
+ 
+.e-card-link:hover {
+    text-decoration: underline;
+}
+ 
+/* Pie del correo */
+.e-footer {
+    border-top: 1px solid #eeeeee;
+    padding: 14px 32px;
+    font-size: 11px;
+    color: #999999;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =================================================================== */
+/* Estilos para las PÁGINAS DEL GENERADOR
+/* =================================================================== */
+.container {
+    background: #ffffff; padding: 30px 40px; border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); max-width: 1100px; width: 90%;
+}
+
+.noselect {
+    background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+    padding: 25px;
+}
+.noselect h2 {
+    color: #124a99; text-align: left; margin-top: 0;
+    margin-bottom: 20px; font-size: 1.5rem;
+}
+.noselect p { font-size: 0.9rem; color: #475569; }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-right: 26px;
+}
+
+.form-top-row, .form-middle-row {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+.form-top-row {
+    grid-template-columns: repeat(3, 1fr);
+}
+.form-middle-row {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+}
+.form-center-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.form-center-row .form-group {
+    width: 100%;
+    max-width: 240px;
+}
+
+.form-group { display: flex; flex-direction: column; }
+.form-group label { font-weight: 600; color: #334155; margin-bottom: 8px; }
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-group select {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23023047%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    background-size: .65em auto;
+    padding-right: 36px;
+}
+.form-group select:invalid { color: #64748b; }
+.form-group input[type="text"]:focus, .form-group select:focus {
+    outline: none; border-color: #4da42f;
+    box-shadow: 0 0 0 3px rgba(77, 164, 47, 0.2);
+}
+
+.generate-button-container { text-align: center; }
+.noselect button#generar-btn {
+    padding: 10px 20px; background-color: #555; color: white; border: none;
+    border-radius: 6px; font-size: 1rem; font-weight: 500;
+    cursor: pointer; transition: background-color 0.2s;
+}
+.noselect button#generar-btn:hover { background-color: #333; }
+
+.back-button {
+    display: inline-block; margin-bottom: 15px; color: #124a99;
+    text-decoration: none; font-weight: 600;
+}
+.back-button:hover { text-decoration: underline; }
+
+#firma-container {
+    border: 2px dashed #94a3b8; padding: 25px; border-radius: 8px;
+    background-color: #ffffff; position: relative;
+    margin-top: 40px;
+}
+#firma-container::before {
+    content: 'VISTA PREVIA - El contenido de este recuadro se copiará';
+    position: absolute; top: -12px; left: 15px; background-color: #ffffff;
+    padding: 0 10px; color: #94a3b8; font-size: 0.8rem;
+    font-weight: 600; text-transform: uppercase;
+}
+
+.copy-button-wrapper { text-align: center; margin: 30px 0; }
+.action-button {
+    background-color: #124a99;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+.action-button:hover {
+    background-color: #0d3a7a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.action-button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+.action-button.copied {
+    background-color: #4da42f;
+}
+/* Mensaje flotante para copiado de correo */
+.copy-message {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4da42f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.copy-message.show {
+    opacity: 1;
+}
+
+/* =================================================================== */
+/* Responsive
+/* =================================================================== */
+@media (max-width: 900px) {
+    .form-top-row, .form-middle-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: none;
+    }
+}
