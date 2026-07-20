@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Generador de correo 4</title>
+    <style>
+        /* Estilos solo para la interfaz, NO para el correo copiado */
+        .copy-message {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4da42f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .copy-message.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="noselect">
+        <a href="index.html" class="back-button">&larr; Volver a la selección</a>
+
+        <h1 style="font-size: 22px; font-weight: 700; color: #163A73; margin: 0 0 12px 0; line-height: 1.3; text-align: center;">Tu silla, tu escritorio, tu salud 🪑</h1>
+
+        <!-- Botón para copiar correo -->
+        <div class="copy-button-wrapper">
+            <button id="copy-email-btn" class="action-button">Copiar Correo</button>
+        </div>
+<div id="email-content" style="width:650px; max-width:100%; border:1px solid #e2e2e2; border-radius:24px; overflow:hidden; background-color:#ffffff; margin:0 auto; font-family:Arial, Helvetica, sans-serif; color:#222222;">
+ 
+    <!-- Preheader -->
+    <div style="border-top:1px solid #eeeeee; padding:14px 32px; font-size:11px; color:#999999; text-align:center;">
+      Centrica Soluciones Innovadoras · <a href="#" style="color:#0E58A9;">Ver en Navegador</a>
+    </div>
+ 
+    <!-- Logo -->
+    <p style="margin:32px; padding:24px; line-height:1px; text-align:center;">
+      <img src="https://raw.githubusercontent.com/centricasolucionesdiseno-ux/Abrebocas-Mail/main/img/logo.png" alt="Logo empresa" style="max-width:180px;">
+    </p>
+ 
+    <!-- Imagen de cabecera -->
+    <p style="margin:0; padding:0; line-height:1px;">
+      <img src="https://raw.githubusercontent.com/centricasolucionesdiseno-ux/Abrebocas-Mail/main/img/Mail/Dia9.png" alt="Ergonomía en casa" style="width:100%; display:block;">
+    </p>
+ 
+    <!-- Contenido principal -->
+    <div style="padding:28px 32px 20px 32px;">
+ 
+      <p style="font-size:12px; font-weight:700; color:#0E58A9; letter-spacing:1px; margin:0 0 8px 0; text-transform:uppercase;">Semana 4 · Ergonomía y Ambiente de Trabajo</p>
+ 
+      <h1 style="font-size:22px; font-weight:700; color:#163A73; margin:0 0 12px 0; line-height:1.3;">
+        Tu silla, tu escritorio, tu salud 🪑
+      </h1>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 14px 0;">
+        Hola equipo,
+      </p>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 14px 0;">
+        ¿Cuántas horas al día pasas sentado frente al computador? Para la mayoría de nosotros, son entre 6 y 9 horas. Lo que quizás no sabemos es que <strong style="color:#163A73;">la postura incorrecta durante ese tiempo es una de las principales causas de dolor de espalda, cuello y muñecas</strong> en trabajadores remotos.
+      </p>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 20px 0;">
+        La buena noticia: con ajustes simples en tu puesto de trabajo, puedes prevenir la mayoría de estas molestias. Aquí te explicamos cómo.
+      </p>
+ 
+      <h2 style="font-size:16px; font-weight:700; color:#163A73; margin:0 0 12px 0;">
+        La postura correcta: punto por punto
+      </h2>
+ 
+      <!-- Checklist ergonomía -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+        <tr>
+          <td style="padding:8px 0; border-bottom:1px solid #f0f0f0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="32" style="vertical-align:top; padding-top:2px;">
+                  <div style="width:24px; height:24px; background:#e8f0fb; border-radius:50%; text-align:center; line-height:24px; font-size:13px;">👁</div>
+                </td>
+                <td style="vertical-align:top; padding-left:10px;">
+                  <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 2px 0;">Pantalla a la altura de los ojos</p>
+                  <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">El borde superior del monitor debe quedar a la altura de tus ojos o ligeramente por debajo. Si usas portátil, considera un soporte externo.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 0; border-bottom:1px solid #f0f0f0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="32" style="vertical-align:top; padding-top:2px;">
+                  <div style="width:24px; height:24px; background:#e8f0fb; border-radius:50%; text-align:center; line-height:24px; font-size:13px;">💪</div>
+                </td>
+                <td style="vertical-align:top; padding-left:10px;">
+                  <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 2px 0;">Codos en ángulo de 90°</p>
+                  <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">Los antebrazos deben quedar paralelos al piso. Ajusta la altura de la silla o el escritorio para lograrlo.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 0; border-bottom:1px solid #f0f0f0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="32" style="vertical-align:top; padding-top:2px;">
+                  <div style="width:24px; height:24px; background:#e8f0fb; border-radius:50%; text-align:center; line-height:24px; font-size:13px;">🦵</div>
+                </td>
+                <td style="vertical-align:top; padding-left:10px;">
+                  <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 2px 0;">Pies apoyados en el suelo</p>
+                  <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">Las rodillas deben formar un ángulo de 90°. Si la silla es muy alta, usa un reposapiés o una resma de hojas.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 0; border-bottom:1px solid #f0f0f0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="32" style="vertical-align:top; padding-top:2px;">
+                  <div style="width:24px; height:24px; background:#e8f0fb; border-radius:50%; text-align:center; line-height:24px; font-size:13px;">🔙</div>
+                </td>
+                <td style="vertical-align:top; padding-left:10px;">
+                  <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 2px 0;">Espalda recta con apoyo lumbar</p>
+                  <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">La zona lumbar (parte baja de la espalda) debe tener soporte. Si tu silla no lo tiene, usa una almohada pequeña o una toalla enrollada.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="32" style="vertical-align:top; padding-top:2px;">
+                  <div style="width:24px; height:24px; background:#e8f0fb; border-radius:50%; text-align:center; line-height:24px; font-size:13px;">📏</div>
+                </td>
+                <td style="vertical-align:top; padding-left:10px;">
+                  <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 2px 0;">Distancia a la pantalla: 50–70 cm</p>
+                  <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">Aproximadamente el largo de un brazo extendido. Si forzar la vista, ajusta el tamaño de fuente del sistema, no la distancia.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+ 
+      <!-- Video destacado -->
+      <div style="background:#163A73; border-radius:12px; padding:18px 20px; margin-bottom:20px;">
+        <p style="font-size:13px; font-weight:700; color:#ffffff; margin:0 0 6px 0;">🎬 Video recomendado de esta semana</p>
+        <p style="font-size:12px; color:#c8d8f0; margin:0 0 10px 0; line-height:1.6;">Posición correcta para realizar trabajo en computador — aprende a ajustar tu puesto paso a paso.</p>
+        <a href="https://www.youtube.com/watch?v=c0YZQpT-zpk" style="display:inline-block; background:#ffffff; color:#163A73; font-size:12px; font-weight:700; padding:8px 18px; border-radius:6px; text-decoration:none;">▶ Ver video</a>
+      </div>
+ 
+      <div style="background:#163A73; border-radius:12px; padding:18px 20px; margin-bottom:20px;">
+        <p style="font-size:13px; font-weight:700; color:#ffffff; margin:0 0 6px 0;">🎬 Video complementario</p>
+        <p style="font-size:12px; color:#c8d8f0; margin:0 0 10px 0; line-height:1.6;">Postura correcta para el trabajo en casa — consejos prácticos para toda la jornada.</p>
+        <a href="https://www.youtube.com/watch?v=3_7e_LfweVs" style="display:inline-block; background:#ffffff; color:#163A73; font-size:12px; font-weight:700; padding:8px 18px; border-radius:6px; text-decoration:none;">▶ Ver video</a>
+      </div>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 24px 0;">
+        Dedica esta semana a revisar tu puesto de trabajo con estos puntos en mente. A veces un pequeño ajuste marca una gran diferencia al final del día. <strong style="color:#163A73;">Tu cuerpo lo notará.</strong>
+      </p>
+ 
+      <!-- Card recurso -->
+      <div style="border:1px solid #e0e0e0; border-radius:10px; overflow:hidden; margin-top:8px;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="110" style="background:#e8f0fb; vertical-align:middle; text-align:center; padding:0;">
+              <img src="https://raw.githubusercontent.com/centricasolucionesdiseno-ux/Abrebocas-Mail/main/img/Mail/Frame4.png" alt="recurso" style="width:110px; display:block; object-fit:cover;">
+            </td>
+            <td style="padding:14px 16px; vertical-align:top;">
+              <p style="font-size:14px; font-weight:700; color:#163A73; margin:0 0 5px 0;">¿Sientes dolores frecuentes al trabajar?</p>
+              <p style="font-size:12px; color:#666666; line-height:1.6; margin:0 0 8px 0;">Comunícalo al equipo de Gerencias. Podemos orientarte sobre ajustes ergonómicos o derivarte al médico de la ARL si es necesario.</p>
+              <span style="font-size:12px; color:#0E58A9; font-weight:700;">📅 Próximo correo: La pantalla no debería dolerte</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+ 
+    </div>
+ 
+    <!-- Footer -->
+    <div style="border-top:1px solid #eeeeee; padding:14px 32px; font-size:11px; color:#999999; text-align:center;">
+      Centrica Soluciones Innovadoras · Todos los derechos reservados
+    </div>
+ 
+  </div>
+
+<div id="copy-message" class="copy-message">✅ Correo copiado al portapapeles</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
