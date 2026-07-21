@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Generador de correo 5</title>
+    <style>
+        /* Estilos solo para la interfaz, NO para el correo copiado */
+        .copy-message {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4da42f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .copy-message.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="noselect">
+        <a href="index.html" class="back-button">&larr; Volver a la selección</a>
+
+        <h1 style="font-size: 22px; font-weight: 700; color: #163A73; margin: 0 0 12px 0; line-height: 1.3; text-align: center;">La pantalla no debería dolerte 👁️</h1>
+
+        <!-- Botón para copiar correo -->
+        <div class="copy-button-wrapper">
+            <button id="copy-email-btn" class="action-button">Copiar Correo</button>
+        </div>
+<div id="email-content" style="width:650px; max-width:100%; border:1px solid #e2e2e2; border-radius:24px; overflow:hidden; background-color:#ffffff; margin:0 auto; font-family:Arial, Helvetica, sans-serif; color:#222222;">
+ 
+    <!-- Preheader -->
+    <div style="border-top:1px solid #eeeeee; padding:14px 32px; font-size:11px; color:#999999; text-align:center;">
+      Centrica Soluciones Innovadoras · <a href="#" style="color:#0E58A9;">Ver en Navegador</a>
+    </div>
+ 
+    <!-- Logo -->
+    <p style="margin:32px; padding:24px; line-height:1px; text-align:center;">
+      <img src="https://raw.githubusercontent.com/centricasolucionesdiseno-ux/Abrebocas-Mail/main/img/logo.png" alt="Logo empresa" style="max-width:180px;">
+    </p>
+ 
+    <!-- Imagen de cabecera -->
+    <p style="margin:0; padding:0; line-height:1px;">
+      <img src="https://raw.githubusercontent.com/centricasolucionesdiseno-ux/Abrebocas-Mail/main/img/Mail/Dia9.png" alt="Fatiga visual pantalla" style="width:100%; display:block;">
+    </p>
+ 
+    <!-- Contenido principal -->
+    <div style="padding:28px 32px 20px 32px;">
+ 
+      <p style="font-size:12px; font-weight:700; color:#0E58A9; letter-spacing:1px; margin:0 0 8px 0; text-transform:uppercase;">Semana 5 · Ergonomía y Ambiente de Trabajo</p>
+ 
+      <h1 style="font-size:22px; font-weight:700; color:#163A73; margin:0 0 12px 0; line-height:1.3;">
+        La pantalla no debería dolerte 👁️
+      </h1>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 14px 0;">
+        Hola equipo,
+      </p>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 14px 0;">
+        ¿Al final del día sientes los ojos irritados, pesados o con picazón? ¿Te duele la cabeza después de varias horas en pantalla? Eso tiene nombre: <strong style="color:#163A73;">fatiga visual digital</strong>, y afecta a más del 65% de las personas que trabajan frente a un computador.
+      </p>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 20px 0;">
+        La buena noticia es que se puede prevenir con hábitos muy sencillos. Hoy te compartimos los más efectivos.
+      </p>
+ 
+      <!-- Síntomas -->
+      <div style="background:#fff8e1; border-left:4px solid #f5a623; border-radius:0 10px 10px 0; padding:14px 16px; margin-bottom:20px;">
+        <p style="font-size:13px; font-weight:700; color:#b8741a; margin:0 0 6px 0;">⚠️ Señales de que tus ojos están fatigados</p>
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="50%" style="font-size:12px; color:#555555; padding:3px 0; line-height:1.6;">• Ojos rojos o irritados</td>
+            <td width="50%" style="font-size:12px; color:#555555; padding:3px 0; line-height:1.6;">• Visión borrosa o doble</td>
+          </tr>
+          <tr>
+            <td width="50%" style="font-size:12px; color:#555555; padding:3px 0; line-height:1.6;">• Dolor de cabeza al final del día</td>
+            <td width="50%" style="font-size:12px; color:#555555; padding:3px 0; line-height:1.6;">• Dificultad para enfocar</td>
+          </tr>
+          <tr>
+            <td width="50%" style="font-size:12px; color:#555555; padding:3px 0; line-height:1.6;">• Sensación de sequedad o picazón</td>
+            <td width="50%" style="font-size:12px; color:#555555; padding:3px 0; line-height:1.6;">• Sensibilidad a la luz</td>
+          </tr>
+        </table>
+      </div>
+ 
+      <h2 style="font-size:16px; font-weight:700; color:#163A73; margin:0 0 12px 0;">
+        La regla 20-20-20: tu mejor aliada
+      </h2>
+ 
+      <!-- Regla 20-20-20 visual -->
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+        <tr>
+          <td width="31%" style="text-align:center; vertical-align:top;">
+            <div style="background:#163A73; border-radius:12px; padding:16px 10px;">
+              <p style="font-size:28px; font-weight:700; color:#ffffff; margin:0 0 4px 0;">20</p>
+              <p style="font-size:11px; color:#c8d8f0; margin:0; line-height:1.5;">minutos frente<br>a la pantalla</p>
+            </div>
+          </td>
+          <td width="4%" style="text-align:center; vertical-align:middle; font-size:18px; color:#aaaaaa;">→</td>
+          <td width="31%" style="text-align:center; vertical-align:top;">
+            <div style="background:#0E58A9; border-radius:12px; padding:16px 10px;">
+              <p style="font-size:28px; font-weight:700; color:#ffffff; margin:0 0 4px 0;">20</p>
+              <p style="font-size:11px; color:#c8d8f0; margin:0; line-height:1.5;">segundos de<br>descanso visual</p>
+            </div>
+          </td>
+          <td width="4%" style="text-align:center; vertical-align:middle; font-size:18px; color:#aaaaaa;">→</td>
+          <td width="31%" style="text-align:center; vertical-align:top;">
+            <div style="background:#2a7fc4; border-radius:12px; padding:16px 10px;">
+              <p style="font-size:28px; font-weight:700; color:#ffffff; margin:0 0 4px 0;">20</p>
+              <p style="font-size:11px; color:#c8d8f0; margin:0; line-height:1.5;">pies (6 m) de<br>distancia al mirar</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+ 
+      <p style="font-size:13px; color:#666666; line-height:1.6; margin:0 0 20px 0; text-align:center; font-style:italic;">
+        Cada 20 minutos, mira algo a 6 metros de distancia durante 20 segundos. Así relajas los músculos oculares.
+      </p>
+ 
+      <h2 style="font-size:16px; font-weight:700; color:#163A73; margin:0 0 12px 0;">
+        Más ajustes que marcan la diferencia
+      </h2>
+ 
+      <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+        <tr>
+          <td width="48%" style="vertical-align:top; padding:0 6px 10px 0;">
+            <div style="background:#f7f9fd; border-radius:10px; padding:14px 16px;">
+              <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 6px 0;">💡 Iluminación correcta</p>
+              <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">La luz natural debe entrar de lado, nunca por detrás ni de frente a la pantalla. Evita reflejos en el monitor.</p>
+            </div>
+          </td>
+          <td width="4%"></td>
+          <td width="48%" style="vertical-align:top; padding:0 0 10px 6px;">
+            <div style="background:#f7f9fd; border-radius:10px; padding:14px 16px;">
+              <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 6px 0;">🌙 Modo nocturno</p>
+              <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">Activa el filtro de luz azul en tu computador o celular, especialmente en las horas de la tarde y noche.</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="48%" style="vertical-align:top; padding:0 6px 0 0;">
+            <div style="background:#f7f9fd; border-radius:10px; padding:14px 16px;">
+              <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 6px 0;">🔆 Brillo de pantalla</p>
+              <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">El brillo del monitor debe ser similar al de la habitación. Una pantalla demasiado brillante en un cuarto oscuro es muy dañina.</p>
+            </div>
+          </td>
+          <td width="4%"></td>
+          <td width="48%" style="vertical-align:top; padding:0 0 0 6px;">
+            <div style="background:#f7f9fd; border-radius:10px; padding:14px 16px;">
+              <p style="font-size:13px; font-weight:700; color:#163A73; margin:0 0 6px 0;">💧 Parpadea más</p>
+              <p style="font-size:12px; color:#555555; margin:0; line-height:1.6;">Frente a la pantalla parpadeamos 3 veces menos de lo normal. Recuerda parpadear conscientemente para mantener los ojos hidratados.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+ 
+      <!-- Video -->
+      <div style="background:#163A73; border-radius:12px; padding:18px 20px; margin-bottom:20px;">
+        <p style="font-size:13px; font-weight:700; color:#ffffff; margin:0 0 6px 0;">🎬 Video recomendado de esta semana</p>
+        <p style="font-size:12px; color:#c8d8f0; margin:0 0 10px 0; line-height:1.6;">Pausa para los ojos — ejercicios visuales rápidos para hacer durante tu jornada laboral.</p>
+        <a href="https://www.youtube.com/watch?v=EbQpoVdbRBQ" style="display:inline-block; background:#ffffff; color:#163A73; font-size:12px; font-weight:700; padding:8px 18px; border-radius:6px; text-decoration:none;">▶ Ver video</a>
+      </div>
+ 
+      <p style="font-size:14px; color:#444444; line-height:1.7; margin:0 0 24px 0;">
+        Tus ojos trabajan tanto como tú. Dales el descanso que merecen. <strong style="color:#163A73;">Unos minutos de pausa visual hoy evitan problemas serios mañana.</strong>
+      </p>
+ 
+      <div style="border:1px solid #e0e0e0; border-radius:10px; overflow:hidden; margin-top:8px;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="110" style="background:#e8f0fb; vertical-align:middle; text-align:center; padding:0;">
+              <img src="https://raw.githubusercontent.com/centricasolucionesdiseno-ux/Abrebocas-Mail/main/img/Mail/Frame4.png" alt="recurso" style="width:110px; display:block; object-fit:cover;">
+            </td>
+            <td style="padding:14px 16px; vertical-align:top;">
+              <p style="font-size:14px; font-weight:700; color:#163A73; margin:0 0 5px 0;">¿Usas gafas o lentes de contacto?</p>
+              <p style="font-size:12px; color:#666666; line-height:1.6; margin:0 0 8px 0;">Considera hablar con tu médico sobre lentes especiales para uso prolongado en pantalla. La ARL puede orientarte sobre este beneficio.</p>
+              <span style="font-size:12px; color:#0E58A9; font-weight:700;">📅 Próximo correo: ¿Tu espacio de trabajo te cuida o te daña?</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    <!-- Footer -->
+    <div style="border-top:1px solid #eeeeee; padding:14px 32px; font-size:11px; color:#999999; text-align:center;">
+      Centrica Soluciones Innovadoras · Todos los derechos reservados
+    </div>
+ 
+  </div>
+
+<div id="copy-message" class="copy-message">✅ Correo copiado al portapapeles</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
